@@ -4,7 +4,8 @@
   "description": "福田个性化登录页",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --open"
   },
   "repository": {
     "type": "git",
@@ -16,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/dingjunjie0501/futian-index/issues"
   },
-  "homepage": "https://github.com/dingjunjie0501/futian-index#readme"
+  "homepage": "https://github.com/dingjunjie0501/futian-index#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.7.1",
+    "webpack-dev-server": "^2.9.2"
+  }
 }
