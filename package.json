@@ -1,0 +1,20 @@
+{
+  "name": "futian-index",
+  "version": "1.0.0",
+  "description": "福田个性化登录页",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dingjunjie0501/futian-index.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dingjunjie0501/futian-index/issues"
+  },
+  "homepage": "https://github.com/dingjunjie0501/futian-index#readme"
+}
