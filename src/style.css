@@ -471,6 +471,7 @@ button {
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     padding-top: 70px;
+    padding-bottom: 70px;
     text-align: center;
     color: #9aa5b8;
     font-size: 12px;
