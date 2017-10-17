@@ -476,3 +476,19 @@ button {
     color: #9aa5b8;
     font-size: 12px;
 }
+
+input::-webkit-input-placeholder {
+    color: #B3B3B3;
+}
+
+input:-moz-placeholder {
+    color: #B3B3B3;
+}
+
+input::-moz-placeholder {
+    color: #B3B3B3;
+}
+
+input:-ms-input-placeholder {
+    color: #B3B3B3;
+}
