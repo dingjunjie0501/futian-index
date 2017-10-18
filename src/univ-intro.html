@@ -34,6 +34,13 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $('.navigation__link').hover(function () {
+            $('.navigation__link').removeClass('navigation__link--active');
+            $(this).addClass('navigation__link--active');
+        });
+    </script>
 </body>
 
 </html>

@@ -444,6 +444,7 @@ button {
     border-radius: 100px;
     padding: 8px 17px 8px 58px;
     line-height: 1.25;
+    cursor: pointer;
 }
 
 .mb-4 {
