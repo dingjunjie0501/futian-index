@@ -17,67 +17,77 @@
                     <img class="logo" src="futian-logo.png" alt="futian logo">
                 </a>
                 <nav class="navigation__links">
-                    <a href="#" class="navigation__link navigation__link--active">首页</a>
-                    <a href="univ-intro.html" target="_blank" class="navigation__link ">大学介绍</a>
-                    <a href="#" class="navigation__link ">学院介绍</a>
-                    <a href="#" class="navigation__link ">重点项目介绍</a>
-                    <a href="#" class="navigation__link ">咨询新闻</a>
-                    <a href="#" class="navigation__link ">网络学习平台</a>
+                    <a href="index.html" class="navigation__link navigation__link--active">首页</a>
+                    <a href="univ-intro.html" class="navigation__link">大学介绍</a>
+                    <a href="#" class="navigation__link coming-soon">学院介绍</a>
+                    <a href="#" class="navigation__link coming-soon">重点项目介绍</a>
+                    <a href="#" class="navigation__link coming-soon">咨询新闻</a>
+                    <a href="#" class="navigation__link coming-soon">网络学习平台</a>
                 </nav>
             </div>
         </header>
     </div>
-    <div>
-        <div class="jumbotron jumbotron-codelines">
-            <div class="container-lg p-responsive position-relative container">
-                <div class="d-md-flex flex-items-center gutter-md-spacious">
-                    <div class="col-md-7">
-                        <p>
-                            <img src="futian-welcome.png" alt="futian welcome">
-                        </p>
-                    </div>
-                    <div class="mx-auto col-md-5 hide-sm">
-                        <div class="rounded-1 text-gray bg-gray-light py-4 px-4 px-md-3 px-lg-4">
-                            <form accept-charset="UTF-8" action="/join" autocomplete="off" class="home-hero-signup js-signup-form" method="post">
-                                <h2>登录</h2>
-                                <dl class="form-group mt-0">
-                                    <dd>
-                                        <input type="text" name="user[login]" id="user[login]" class="form-control form-control-lg input-block" placeholder="用户名"
-                                            autofocus="autofocus">
-                                    </dd>
-                                </dl>
-                                <dl class="form-group">
-                                    <dd>
-                                        <input type="password" name="user[email]" id="user[email]" class="form-control form-control-lg input-block js-email-notice-trigger"
-                                            placeholder="登录密码">
-                                    </dd>
-                                </dl>
-                                <button class="btn btn-primary btn-large f4 btn-block" type="submit">登&nbsp;&nbsp;&nbsp;录</button>
-                            </form>
+    <div id="content">
+        <div>
+            <div class="jumbotron jumbotron-codelines">
+                <div class="container-lg p-responsive position-relative container">
+                    <div class="d-md-flex flex-items-center gutter-md-spacious">
+                        <div class="col-md-7">
+                            <p>
+                                <img src="futian-welcome.png" alt="futian welcome">
+                            </p>
+                        </div>
+                        <div class="mx-auto col-md-5 hide-sm">
+                            <div class="rounded-1 text-gray bg-gray-light py-4 px-4 px-md-3 px-lg-4">
+                                <form accept-charset="UTF-8" action="/join" autocomplete="off" class="home-hero-signup js-signup-form" method="post">
+                                    <h2>登录</h2>
+                                    <dl class="form-group mt-0">
+                                        <dd>
+                                            <input type="text" name="user[login]" id="user[login]" class="form-control form-control-lg input-block" placeholder="用户名"
+                                                autofocus="autofocus">
+                                        </dd>
+                                    </dl>
+                                    <dl class="form-group">
+                                        <dd>
+                                            <input type="password" name="user[email]" id="user[email]" class="form-control form-control-lg input-block js-email-notice-trigger"
+                                                placeholder="登录密码">
+                                        </dd>
+                                    </dl>
+                                    <button class="btn btn-primary btn-large f4 btn-block" type="submit">登&nbsp;&nbsp;&nbsp;录</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="d-md-flex flex-items-center gutter-md-spacious">
-                    <div class="text-md-left">
-                        <p class="alt-lead mb-4">
-                            <i class="futian-loudspeaker"></i>关于近期苹果手机闪退解决方案的通知通啊啊啊</p>
+                    <div class="d-md-flex flex-items-center gutter-md-spacious">
+                        <div class="text-md-left">
+                            <p class="alt-lead mb-4">
+                                <i class="futian-loudspeaker"></i>关于近期苹果手机闪退解决方案的通知通啊啊啊</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div>
-        <footer class="footer">
-            <div class="container">
-                <p>©2017 Baidu 使用百度前必读 意见反馈 京ICP证030173号</p>
-            </div>
-        </footer>
+        <div>
+            <footer class="footer">
+                <div class="container">
+                    <p>©2017 Baidu 使用百度前必读 意见反馈 京ICP证030173号</p>
+                </div>
+            </footer>
+        </div>
     </div>
     <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <script>
         $('.navigation__link').hover(function () {
             $('.navigation__link').removeClass('navigation__link--active');
             $(this).addClass('navigation__link--active');
+        });
+        $('.navigation__link').click(function () {
+            var flag = $(this).hasClass('coming-soon');
+            var html =
+                '<div class="univ-intro-bg"><div class="container univ-intro-container"><div class="univ-intro come-soon"><p class="tip">敬请期待...</p></div></div></div>';
+            if (flag) {
+                $('#content').html(html);
+            }
         });
     </script>
 </body>

@@ -17,20 +17,22 @@
                     <img class="logo" src="futian-logo.png" alt="futian logo">
                 </a>
                 <nav class="navigation__links">
-                    <a href="#" class="navigation__link">首页</a>
-                    <a href="univ-intro.html" target="_blank" class="navigation__link navigation__link--active">大学介绍</a>
-                    <a href="#" class="navigation__link ">学院介绍</a>
-                    <a href="#" class="navigation__link ">重点项目介绍</a>
-                    <a href="#" class="navigation__link ">咨询新闻</a>
-                    <a href="#" class="navigation__link ">网络学习平台</a>
+                    <a href="index.html" class="navigation__link">首页</a>
+                    <a href="univ-intro.html" class="navigation__link navigation__link--active">大学介绍</a>
+                    <a href="#" class="navigation__link coming-soon">学院介绍</a>
+                    <a href="#" class="navigation__link coming-soon">重点项目介绍</a>
+                    <a href="#" class="navigation__link coming-soon">咨询新闻</a>
+                    <a href="#" class="navigation__link coming-soon">网络学习平台</a>
                 </nav>
             </div>
         </header>
     </div>
-    <div class="univ-intro-bg">
-        <div class="container univ-intro-container">
-            <div class="univ-intro">
-                <img src="univ-intro.png" alt="futian univ intro">
+    <div id="content">
+        <div class="univ-intro-bg">
+            <div class="container univ-intro-container">
+                <div class="univ-intro">
+                    <img src="univ-intro.png" alt="futian univ intro">
+                </div>
             </div>
         </div>
     </div>
@@ -39,6 +41,14 @@
         $('.navigation__link').hover(function () {
             $('.navigation__link').removeClass('navigation__link--active');
             $(this).addClass('navigation__link--active');
+        });
+        $('.navigation__link').click(function () {
+            var flag = $(this).hasClass('coming-soon');
+            var html =
+                '<div class="univ-intro-bg"><div class="container univ-intro-container"><div class="univ-intro come-soon"><p class="tip">敬请期待...</p></div></div></div>';
+            if (flag) {
+                $('#content').html(html);
+            }
         });
     </script>
 </body>
