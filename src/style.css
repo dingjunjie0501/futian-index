@@ -178,9 +178,10 @@ a:hover {
 .Header {
     z-index: 1;
     padding-top: 12px;
-    padding-bottom: 12px;
+    padding-bottom: 11px;
     color: #000000;
     background-color: #ffffff;
+    border-bottom: 1px solid #efefef;
 }
 
 .container {
@@ -456,8 +457,9 @@ button {
     width: 20px;
     height: 20px;
     position: absolute;
-    background: url(futian-loudspeaker.png);
+    background: url(futian-loudspeaker.gif);
     background-repeat: no-repeat;
+    background-size: 100%;
     left: 19px;
 }
 
@@ -475,6 +477,20 @@ button {
     text-align: center;
     color: #9aa5b8;
     font-size: 12px;
+}
+
+.univ-intro-bg {
+    background: #eff3f5;
+}
+
+.univ-intro-bg .univ-intro-container {
+    padding: 60px 40px 125px 40px;
+}
+
+.univ-intro {
+    background-color: #ffffff;
+    padding: 99px;
+    border: 1px solid #efefef;
 }
 
 input::-webkit-input-placeholder {
